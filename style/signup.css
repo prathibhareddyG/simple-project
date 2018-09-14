@@ -1,0 +1,61 @@
+h1   {
+	color : red;
+	font-family: lucida console;
+	font-size: 20px;
+	text-align: center;
+	height: 0px;
+
+}
+body {
+	
+	font-family: georgia;
+	font-size: 0;
+    margin: 0;
+	padding:0;
+	height:100%;
+	background-image: url("../pictures/beach.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: cover;
+	font-family: sans-serif;
+    color:yellow;
+ }
+ td {
+ 	height: 40px;
+     width: 30px;
+     font-size: 15px;
+ }
+ .registration {
+	width: 520px;
+	height: 520px;
+	background:black;
+	color: yellow;
+	top:50%;
+	left: 50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+ .registration input[type="submit"]{
+ 	
+ 	background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:20px;
+}
+.prathibha{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top:-50px;
+	left:calc(50%  -  50px);
+}
+
+ 
