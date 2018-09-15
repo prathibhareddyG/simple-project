@@ -32,9 +32,9 @@ app.get('/signup',function(req,res){
 app.post('/signup', urlencodedParser, function (req, res) {
     if (!req.body) return res.sendStatus(400)
     res.send('welcome, ' + req.body.username)
-    sql = "INSERT INTO users (username, password, emailid,phone_no,gender,DOB,address) VALUES (\'"+ req.body.username +"\', \'"+ req.body.password +"\', \'"+req.body.emailid+"\', \'"+req.body.phone_no+"\', \'"+req.body.gender+"\', \'"+req.body.DOB+"\', \'"+req.body.address+"\')"
+    sql = "INSERT INTO users2 (username, password, emailid,phone_no,gender,DOB,address) VALUES (\'"+ req.body.username +"\', \'"+ req.body.password +"\', \'"+req.body.emailid+"\', \'"+req.body.phone_no+"\', \'"+req.body.gender+"\', \'"+req.body.DOB+"\', \'"+req.body.address+"\')"
     console.log(sql);
-     sql ="select * from users"
+     sql ="select * from users2"
      db.select_db(sql);
     db.insert_db(sql);
     //res.sendfile('success.html', {'root':__dirname + '/templates'})

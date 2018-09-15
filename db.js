@@ -11,7 +11,6 @@ con.connect(function(err) {
   if (err) throw err;
   console.log("DB : Connected!");
 });
-
 function insert_db(sql){
     con.connect(function(err) {
         if (err) throw err;
@@ -36,7 +35,7 @@ function select_db(sql){
 }
 
 module.exports = {
-  insert_db: function(sql){
+   insert_db: function(sql){
       con.query(sql, function (err, result) {
         if (err) throw err;
         console.log("1 record inserted");
